@@ -14,6 +14,7 @@ vinculado a um professor.
 ### 2. Listar alunos/professores cadastrados 
 ### 3. Pesquisar alunos/professor por id
 ### 4. Vincular/desvincular aluno à professor
+### 5. Deletar aluno/professor
 
 # Tecnologias aplicadas
 - Java(Spring Boot, JPA Hibernate)
