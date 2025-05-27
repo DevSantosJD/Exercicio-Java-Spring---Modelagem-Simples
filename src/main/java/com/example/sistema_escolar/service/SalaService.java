@@ -4,6 +4,7 @@ import com.example.sistema_escolar.model.AlunoModel;
 import com.example.sistema_escolar.model.ProfessorModel;
 import com.example.sistema_escolar.repository.AlunoRepository;
 import com.example.sistema_escolar.repository.ProfessorRepository;
+import jakarta.persistence.EntityExistsException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -80,12 +81,17 @@ public class SalaService {
 
         //Atualiza o objeto professor do banco de dados
         professorRepository.save(professor);
-
-
     }
 
     //Deletar aluno por id
+    public void deletarAluno(Long alunoId){
+        alunoRepository.deleteById(alunoId);
+    }
+
 
     //Deletar professor por id
+    public void deletarProfessor(Long professorId){
+        professorRepository.deleteById(professorId);
+    }
 
 }

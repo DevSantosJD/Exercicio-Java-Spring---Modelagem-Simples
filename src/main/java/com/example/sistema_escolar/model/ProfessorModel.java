@@ -26,7 +26,7 @@ public class ProfessorModel {
 
     @Email
     @Column(unique = true)
-    private String emai;
+    private String email;
 
     @OneToMany(mappedBy = "professor")
     @JsonManagedReference
@@ -34,10 +34,10 @@ public class ProfessorModel {
 
     protected ProfessorModel(){}
 
-    public ProfessorModel(Long id, String nome, LocalDate dataNascimento, String emai) {
+    public ProfessorModel(Long id, String nome, LocalDate dataNascimento, String email) {
         this.id = id;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
-        this.emai = emai;
+        this.email = email;
     }
 }
