@@ -17,6 +17,6 @@ vinculado a um professor.
 ### 5. Deletar aluno/professor
 
 # Tecnologias aplicadas
-- Java(Spring Boot, JPA Hibernate)
+- Java(Spring Boot, JPA Hibernate, spring security)
 - PostgreSQL
 - Postman
